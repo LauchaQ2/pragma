@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: rgb(2, 21, 141);
+  background: linear-gradient(90deg, rgba(2, 21, 141, 1) 0%, rgba(0, 0, 0, 1) 48%, rgba(2, 21, 141, 1) 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Roboto&display=swap');
+
+.logo-container {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
+
+.logo-title {
+  width: 160px;
+  height: 90px;
+}
+
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.menu-btn__burger {
+  width: 40px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+/*MENU NAVBAR */
+.navbar {
+  padding: 10px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: white;
+  width: 100%;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.banner {
+  border-radius: 10px;
+  background-image: url("./assets/plomeria2.jpg");
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card2 {
+  background-color: rgba(255, 255, 255, 0.76);
+  width: 44%;
+}
+
+.card-body2 {
+  text-align: center;
+
+}
+
+.card-title2 {
+  font-size: 25px;
+}
+
+.card-text2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.redes {
+  width: 50px;
+}
+
+a:focus {
+  box-sizing: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-services {
+  text-align: center;
+  font-size: 35px;
+  border-bottom: 1px solid grey;
+  color: white;
+}
+
+.check {
+  width: 20px;
+}
+
+.service-item {
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.service-item2 {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card-services {
+  margin-bottom: 15px;
+  background-color: black;
+  border: 1px solid white;
+}
+.form-label{
+  color: white;
+}

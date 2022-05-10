@@ -1,0 +1,105 @@
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .logo-container {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-title {
+        width: 100px;
+        height: 50px;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .banner {
+        border-radius: 10px;
+        background-image: url("./assets/plomeria2.jpg");
+        width: 90%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.69);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .card2 {
+        background-color: rgba(255, 255, 255, 0.76);
+        width: 70%;
+    }
+
+    .card-body2 {
+        text-align: center;
+
+    }
+
+    .card-title2 {
+        font-size: 20px;
+    }
+
+    .card-text2 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .redes {
+        width: 30px;
+    }
+
+    .title-services {
+        font-size: 30px;
+    }
+
+    .service-item {
+        font-size: 22px;
+    }
+    .service-item2{
+        font-size: 16px;
+        text-align: justify;
+    }
+}
