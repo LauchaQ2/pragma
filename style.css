@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif!important;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 a{
   text-decoration: none;
@@ -203,7 +203,7 @@ a:focus {
 }
 
 .service-item {
-  font-size: 20px;
+  font-size: 19px;
   color: white;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
@@ -211,7 +211,7 @@ a:focus {
 }
 
 .service-item2 {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -272,4 +272,7 @@ footer{
 }
 .invert-color{
  filter: invert(100%);
+}
+.pres{
+  font-size: 25px;
 }
