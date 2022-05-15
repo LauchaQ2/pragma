@@ -101,12 +101,12 @@
 
     .service-item {
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 300;
     }
     .service-item2{
         font-size: 18px;
         text-align: left;
-        font-weight: 200;
+        font-weight: 300;
     }
     .e-mail-item{
         font-size: 1.2rem;
@@ -116,6 +116,7 @@
     }
     .us-item{
         font-size: 18px;
+        font-weight: 300;
     }
     .tel-group{
         flex-direction: column!important;
